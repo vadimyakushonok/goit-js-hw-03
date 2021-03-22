@@ -1,3 +1,25 @@
+const user = {
+  name: 'Mango',
+  age: 20,
+  hobby: 'html',
+  premium: true,
+};
+console.log(user);
+
+user.mood = 'happy';
+console.log(user);
+
+user.hobby = 'skydiving';
+console.log(user);
+
+user.premium = false;
+console.log(user);
+
+const keys = Object.keys(user);
+console.log(keys);
+
+
+
 /* const name = 'rjrjr'
 const capasity = 6
 
@@ -41,7 +63,7 @@ console.log(hotel); */
 
   console.log(hotel);
    */
-
+/* 
   const hotel = {
     name: 'Resort Hotel',
     stars: 5,
@@ -70,4 +92,4 @@ console.log(hotel); */
   };
   
   add(10, 1, 2, 3);
-  add(15, 1, 2, 3, 4, 5);
+  add(15, 1, 2, 3, 4, 5); */

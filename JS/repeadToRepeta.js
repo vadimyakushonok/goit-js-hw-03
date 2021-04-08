@@ -86,18 +86,37 @@ for (const friend of friends) {
 
 // console.log(message);
 
-const numbers = [51, 18, 13, 24, 7, 85, 19];
-let smallestNumber = numbers[0];
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let smallestNumber = numbers[0];
 
-for (const number of numbers) {
-    if (number < smallestNumber) {
-        smallestNumber = number;
-    }
-}
+// for (const number of numbers) {
+//     if (number < smallestNumber) {
+//         smallestNumber = number;
+//     }
+// }
 
-console.log(smallestNumber);
+// console.log(smallestNumber);
 
+// const add = function (x, y) {
+//     console.log(x);
+//     console.log(y);
 
+//     const result = x + y;
+//     // const result2 = x * y;
+//     // console.log('x + y: ', result);
+//     // console.log('x * y: ', result2);
+//     console.log('Выполняется функция add');
+
+//     return result;
+// };
+
+// const r1 = add (5, 3);
+// console.log(r1);
+
+//Напиши функцию которая принимает массив цен (чисел) и возвращает их сумму
+
+const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+let total = 
 
 
 

@@ -114,11 +114,65 @@ for (const friend of friends) {
 // console.log(r1);
 
 //Напиши функцию которая принимает массив цен (чисел) и возвращает их сумму
+/* const calculateTotalPrice = function (items) {
+    let total = 0;
+    for (const item of items) {
+        total += item;
+    }
 
-const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
-let total = 
+    return total;
+}
+console.log(calculateTotalPrice([54, 28, 105, 70, 92, 17, 120, 12, 25, 90]));
+ */
 
 
+//Функия поиска логина в массиве логинов
+/* const logins1 = ['Mango', 'Ajax', 'Kiwi', 'Poly'];
+const logins2 = ['Vasya', 'Petya', 'Vanya', 'Saha'];
+
+const findLogin = function (logins, loginToFind) {
+
+        const message = logins.includes(loginToFind)
+        ? `Пользователь ${loginToFind} найден`
+        : `Пользователь ${loginToFind} не найден`
+    
+return message;
+}
+console.log(findLogin(logins1, 'Mango'));
+console.log(findLogin(logins1, 'tramparam'));
+console.log(findLogin(logins2, 'Vasya'));
+console.log(findLogin(logins2, 'thjj')); */
+
+//Функция поиска наименьшего числа
+/* const findSmallestNumber = function (numbers) {
+    let smallestNumber = numbers[0];
+
+    for (const number of numbers) {
+        if (number < smallestNumber) {
+            smallestNumber = number;
+        }
+    }
+    return smallestNumber
+}
+console.log(findSmallestNumber([3, 5, -2, 6]));
+console.log(findSmallestNumber([3, 5, -2, 6, -8]));
+console.log(findSmallestNumber([10, 11, 45, 2])); */
+
+//Напиши функцию которая заменяет регистр каждого символа в строке на противоволожный 
+const changeCase = function (string) {
+    const letters = string.split('');
+    let changeString = '';
+    
+    for(const letter of letters) {
+        const isInLowerCase = letter === letter.toLowerCase();
+        changeString += isInLowerCase 
+        ? letter.toUpperCase() 
+        : letter.toLowerCase();
+    }
+    return changeString;
+}
+console.log(changeCase('JavaScript'));
+console.log(changeCase('VadimusForever'));
 
 
 

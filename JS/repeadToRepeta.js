@@ -159,7 +159,7 @@ console.log(findSmallestNumber([3, 5, -2, 6, -8]));
 console.log(findSmallestNumber([10, 11, 45, 2])); */
 
 //Напиши функцию которая заменяет регистр каждого символа в строке на противоволожный 
-const changeCase = function (string) {
+/* const changeCase = function (string) {
     const letters = string.split('');
     let changeString = '';
     
@@ -172,8 +172,40 @@ const changeCase = function (string) {
     return changeString;
 }
 console.log(changeCase('JavaScript'));
-console.log(changeCase('VadimusForever'));
+console.log(changeCase('VadimusForever')); */
 
 
+// Скрипт по приведению строки в слаг (сделать в форме функции)
+/* const title = 'Top 10 benefits of React framework';
+const normalizeTitle = title.toLowerCase();
+const slagTitle = normalizeTitle.split(' ').join('-');
+console.log(slagTitle); */
+/* const slagTitleFunctoin = function (title) {
+    const slagTitle = title.toLowerCase().split(' ').join('-');  
+    return slagTitle;
+}
+console.log(slagTitleFunctoin('Top 10 benefits of React framework'));
+console.log(slagTitleFunctoin('thfHHfh Tgjgjgj fgjgjg j jLL jjj')); */
 
+// Функции с помощью Array.from (по старому) и просто с помощью операции rest - ...args (по Новому). Исполь
+// в случае когда передается разное количество аргументов в параметры
+/* const fn = function (params) {
+    console.log(arguments);
+    const args = Array.from(arguments);
+    console.log(args);
+}; */
+const fn = function (a, b, ...params) {
+    console.log(`${a} ${b}`);
+    console.log(params);
+    
+}
+fn(1, 2 , 3);//1 2 [3]
+fn(1, 2, 3 , 4); // 1 2 [3, 4] в итоге записались только первых два аргумента а остальное пошло в массив
 
+const message = ['Welcome to Bahamas!', 5];
+const ob = String(message);
+
+console.log(message); // Welcome to Bahamas!
+console.log(ob);
+
+console.log(message.indexOf('to')); // 8

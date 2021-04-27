@@ -194,18 +194,73 @@ console.log(slagTitleFunctoin('thfHHfh Tgjgjgj fgjgjg j jLL jjj')); */
     const args = Array.from(arguments);
     console.log(args);
 }; */
-const fn = function (a, b, ...params) {
+/* const fn = function (a, b, ...params) {
     console.log(`${a} ${b}`);
     console.log(params);
     
 }
 fn(1, 2 , 3);//1 2 [3]
 fn(1, 2, 3 , 4); // 1 2 [3, 4] в итоге записались только первых два аргумента а остальное пошло в массив
-
 const message = ['Welcome to Bahamas!', 5];
 const ob = String(message);
-
 console.log(message); // Welcome to Bahamas!
 console.log(ob);
+console.log(message.indexOf('to')); // 8 */
 
-console.log(message.indexOf('to')); // 8
+// 1 Повтор первого задания второго ДЗ
+/* const logItems = function (array) {
+    for(let i = 0; i < array.length; i += 1) {
+        console.log(`${i+1} - ${array[i]}`);
+        }
+    }
+logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
+logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]); */
+
+// 2 Повтор второго задания второго ДЗ
+
+const calculateEngravingPrice = function (message, pricePerWord) {
+    const messageSplit = message.split(' ').length;
+    const totalPrice = messageSplit * pricePerWord;
+    return totalPrice;
+}
+
+console.log(
+    calculateEngravingPrice(
+      'Proin sociis natoque et magnis parturient montes mus',
+      10,
+    ),
+  ); // 80
+  
+  console.log(
+    calculateEngravingPrice(
+      'Proin sociis natoque et magnis parturient montes mus',
+      20,
+    ),
+  ); // 160
+  
+  console.log(
+    calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
+  ); // 240
+  
+  console.log(
+    calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
+  ); // 120
+
+  // 3 Повтор третьего задания второго ДЗ
+    const findLongestWord = function (string) {
+    const words = string.split(' ');
+    let longestWord = words[0];
+    for(let i = 0; i < words.length; i += 1) {
+        if (words[i].length > longestWord.length) {
+            longestWord = words[i];
+        }
+    }
+    return longestWord;
+  }
+    console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
+    console.log(findLongestWord('Google do a roll')); // 'Google'
+    console.log(findLongestWord('May the force be with you')); // 'force'
+
+// 4 Повтор ЧЕТВЕРТОГО задания второго ДЗ
+
+  

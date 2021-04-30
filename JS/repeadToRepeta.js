@@ -218,7 +218,7 @@ logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]); */
 
 // 2 Повтор второго задания второго ДЗ
 
-const calculateEngravingPrice = function (message, pricePerWord) {
+/* const calculateEngravingPrice = function (message, pricePerWord) {
     const messageSplit = message.split(' ').length;
     const totalPrice = messageSplit * pricePerWord;
     return totalPrice;
@@ -259,8 +259,58 @@ console.log(
   }
     console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
     console.log(findLongestWord('Google do a roll')); // 'Google'
-    console.log(findLongestWord('May the force be with you')); // 'force'
+    console.log(findLongestWord('May the force be with you')); // 'force' */
 
 // 4 Повтор ЧЕТВЕРТОГО задания второго ДЗ
+/*   const formatString = function (string) {
+    let result = string;
+    const add = ['...'];
+    const maxLength = 40;
+    if(string.length >= maxLength) {
+    string = string.slice(0, 39).split(' ').concat(add);
+    result = string.join(' ');
+    }
+    return result;
+  }
 
-  
+  console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+// вернется оригинальная строка
+
+console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+// вернется форматированная строка
+
+console.log(formatString('Curabitur ligula sapien.'));
+// вернется оригинальная строка
+
+console.log(
+  formatString(
+    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+  ),
+);
+// вернется форматированная строка */
+
+//5. Повтор ПЯТОГО задания 
+
+const checkForSpam = function (message) {
+
+    const string = message.toLowerCase();
+    return string.includes('sale') || string.includes('spam');
+};
+
+console.log(checkForSpam('Latest technology news')); // false
+
+console.log(checkForSpam('JavaScript weekly newsletter')); // false
+
+console.log(checkForSpam('Get best sale offers now!')); // true
+
+console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+
+
+//6. Повтор Шестого залдания
+
+let input = prompt('Enter the number');
+const numbers = [];
+let total = 0;
+
+if (input === Number)
+

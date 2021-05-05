@@ -342,3 +342,10 @@ console.log(Math.pow(2, 4)); // 16
 // Math.random() - возвращает псевдослучайное число в диапазоне [0, 1)
 console.log(Math.random()); // случайное число между 0 и 1
 console.log(Math.random() * (10 - 1) + 1); // случайное число от 1 до 10
+
+const message = 'Welcome to Bahamas!';
+
+console.log(message.indexOf('to'));
+console.log(to)
+
+

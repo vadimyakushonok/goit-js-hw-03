@@ -291,7 +291,7 @@ console.log(
 
 //5. Повтор ПЯТОГО задания 
 
-const checkForSpam = function (message) {
+/* const checkForSpam = function (message) {
 
     const string = message.toLowerCase();
     return string.includes('sale') || string.includes('spam');
@@ -303,14 +303,42 @@ console.log(checkForSpam('JavaScript weekly newsletter')); // false
 
 console.log(checkForSpam('Get best sale offers now!')); // true
 
-console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+console.log(checkForSpam('[SPAM] How to earn fast money?')); // true */
 
 
-//6. Повтор Шестого залдания
 
-let input = prompt('Enter the number');
-const numbers = [];
-let total = 0;
 
-if (input === Number)
+//  Math.floor(num) - возвращает наибольшее целое число, меньшее,
+// либо равное указанному
+console.log(Math.floor(1.7)); // 1
+console.log(Math.floor(1666.2));
 
+console.log('-------------- отсечка')
+
+// Math.ceil(num) - возвращает наименьшее целое число,
+// большее, либо равное указанному числу.
+console.log(Math.ceil(1.2)); // 2
+console.log(Math.ceil(2.0833));
+
+
+console.log('-------------- отсечка')
+
+// Math.round(num) - возвращает значение числа, округлённое до ближайшего целого
+console.log(Math.round(1.2)); // 1
+console.log(Math.round(1.05)); // 2
+
+
+console.log('-------------- отсечка')
+
+// Math.max(num1, num2, ...) - возвращает наибольшее число из набора
+console.log(Math.max(20, 10, 50, 40)); // 50
+
+// Math.min(num1, num2, ...) - возвращает наименьшее число из набора
+console.log(Math.min(20, 10, 50, 40)); // 10
+
+// Math.pow(base, exponent) - возведение в степень
+console.log(Math.pow(2, 4)); // 16
+
+// Math.random() - возвращает псевдослучайное число в диапазоне [0, 1)
+console.log(Math.random()); // случайное число между 0 и 1
+console.log(Math.random() * (10 - 1) + 1); // случайное число от 1 до 10

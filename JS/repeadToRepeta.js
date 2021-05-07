@@ -343,9 +343,22 @@ console.log(Math.pow(2, 4)); // 16
 console.log(Math.random()); // случайное число между 0 и 1
 console.log(Math.random() * (10 - 1) + 1); // случайное число от 1 до 10
 
-const message = 'Welcome to Bahamas!';
-
-console.log(message.indexOf('to'));
-console.log(to)
 
 
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+let total = 0;
+
+for (let i = 0; i < matrix.length; i += 1) {
+  console.log('Подмассив матрицы matrix[i]: ', matrix[i]);
+
+  for (let j = 0; j < matrix[i].length; j += 1) {
+    console.log('Элемент подмассива матрицы matrix[i][j]: ', matrix[i][j]);
+    total += matrix[i][j];
+  }
+}
+
+console.log(total); // 45
